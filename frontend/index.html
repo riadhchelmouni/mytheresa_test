@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mytheresa Promotions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product List</h1>
+        
+        <!-- Filters Section -->
+        <div class="filters">
+            <!-- Filter by Category -->
+            <label for="category">Filter by Category:</label>
+            <select id="category">
+                <option value="">All Categories</option>
+                <option value="boots">Boots</option>
+                <option value="sandals">Sandals</option>
+                <option value="sneakers">Sneakers</option>
+            </select>
+            
+            <!-- Filter Button -->
+            <button onclick="fetchProducts()">Filter</button>
+        </div>
+        
+        <!-- Products Display Section -->
+        <div id="product-list" class="product-list">
+            <!-- Dynamic product cards will appear here -->
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
